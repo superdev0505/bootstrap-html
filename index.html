@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Leaseum Partners</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css"/>
+    <link rel="stylesheet" href="css/flickity.css"/>
+    <link rel="stylesheet" href="css/animate.min.css"/>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/flickity.js"></script>
+    <script src="js/main2.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // jQuery Validation
+      $("#signup").validate({
+        // if valid, post data via AJAX
+        submitHandler: function(form) {
+          $.post("subscribe.php", { email: $("#email").val() }, function(data) {
+            $('#response').html(data);
+          });
+        },
+        // all fields are required
+        rules: {
+          email: {
+            required: true,
+            email: true
+          }
+        }
+      });
+    });
+  </script>
+    <link rel="stylesheet" href="css/main.css"/>
+  </head>
+  <body>
+
+
+
+
+
+
+
+
+<header class="">
+            <!-- start navigation -->
+            <nav class="navbar navbar-default bootsnav navbar-fixed-top header-dark bg-transparent nav-box-width padding-four-lr on menu-center no-full">
+                <div class="container-fluid nav-header-container">
+                    <div class="row">
+                        <!-- start logo -->
+                        <div class="col-lg-2 col-md-2 col-xs-5">
+                            <a href="index.html" title="Pofo" class="logo"><img src="img/mine/logo/leaseum-logo-white.svg"  class="logo-dark default" alt="Pofo"  width="105" height="26"></a>
+                        </div>
+                        <!-- end logo -->
+                        <div class="col-lg-8 col-md-8 col-xs-2 accordion-menu">
+                            <button type="button" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-target="#navbar-collapse-toggle-1">
+                                <span class="sr-only">toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <div class="navbar-collapse collapse no-padding-right" id="navbar-collapse-toggle-1">
+                                <ul id="accordion" class="nav navbar-nav navbar-center alt-font text-normal" data-in="fadeIn" data-out="fadeOut">
+                                    <!-- start menu item -->
+                                    <li class="dropdown megamenu-fw active">
+                                        <a href="javascript:void(0);">Home</a><i class="fas fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
+                                        
+                                    </li>
+                                    <!-- end menu item -->
+                                    <li class="dropdown simple-dropdown"><a href="javascript:void(0);">Pages</a><i class="fas fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
+                                      
+                                    </li>
+                                    <li class="dropdown megamenu-fw">
+                                        <a href="javascript:void(0);">Portfolio</a><i class="fas fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
+                                        
+                                    </li>
+                                    <li class="dropdown simple-dropdown"><a href="javascript:void(0);" title="Blog">Blog</a><i class="fas fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
+                                        
+                                    </li>
+                                    <li class="dropdown megamenu-fw">
+                                        <a href="javascript:void(0);">Elements</a><i class="fas fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
+                                        
+                                       
+                                    </li>
+                                    <li class="dropdown megamenu-fw">
+                                        <a href="javascript:void(0);">Features</a><i class="fas fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
+                                        
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-xs-5 sm-width-auto text-right sm-no-padding-left">
+                           
+                            <div class="header-social-icon xs-display-none">
+                                <a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                                <a href="https://twitter.com/" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a href="https://dribbble.com/" title="Dribbble" target="_blank"><i class="fab fa-dribbble"></i></a>                          
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- end navigation -->  
+        </header>
+
+
+<section class="headers bg-white bg-image text-center" id="headers-8" style="min-height: 100vh;">
+  <!--
+  <div class="container ph-15 p-25">
+    <div class="row justify-content-between align-items-center text-lg-left">
+      <div class="col-auto logo-svg"><a href=""><img src="img/mine/logo/leaseum-logo-white.svg" alt="leaseum partners logo"/></a>
+      </div>
+      <div class="col-auto">
+     
+      </div>
+    </div>
+  </div>
+
+-->
+
+<div class="container pt-30 pt-lg-50 pb-70 pb-sm-80 pb-lg-80">
+    <div class="row justify-content-center align-items-stretch justify-content-lg-end">
+
+ <div class="col-12 col-lg-8 text-lg-left main-text">
+            
+              <h1 class="mb-20 text-white title1">The first token backed by a Manhattan commercial property fund</h1>
+              <h4 class="mb-30 text-white description1">
+                Leaseum Partners introduce a new model of blockchain based 
+real estate investments that will combine the best of both real estate investment management & blockchain worlds, making it significantly more attractive for investors.
+
+              </h4>
+                
+
+                <h4 class="text-white pb-50">
+                We pay dividends.<br> Payout in Fiat &nbsp;<i class="lp-round-dollar dividendsicons"></i> &nbsp;<i class="lp-round-euro dividendsicons"></i> &nbsp;or Crypto &nbsp;<i class="lp-ethereum-logo dividendsicons"></i>&nbsp; <i class="lp-token-icon dividendsicons"></i>
+
+              </h4>
+
+        </div>
+
+      <!-- <div class="col-12 col-lg-2 text-lg-center spaced"></div> -->
+<div class="col-12 col-lg-4 text-lg-center">
+
+      <div class="private-sale-form">
+        <div class="bg-white p-40 ph-20 ph-sm-30">
+          <i class="lp-token-icon formlogo"></i>
+          <h2 class="mb-20 private-sale">Private sale on-going</h2>
+
+          <form id="signup" class="formee" action="subscribe.php" method="post">
+            <div>
+
+          
+            <input class="form-control2 mb-10" type="text" id="email" name="email" required placeholder="ENTER YOUR@EMAIL.COM"></input>
+                   
+          <input type="submit" value="REQUEST MORE INFORMATION" class="btn transition-3d-hover w-full no-padding inputnew">
+          </input>
+       
+
+        </div>
+        </form>
+        <div id="response"></div>
+        </div>
+      </div>
+
+
+      </div>
+
+
+
+</div>
+
+
+</div>
+
+
+<div class="container">
+      <div class="customer-logos pb-50">
+  <div class="slide"><img class="partners-img" src="img/mine/partners/dark/bancor.png" alt="bancor partner logo"></div>
+  <div class="slide"><img class="partners-img" src="img/mine/partners/dark/blockchain-logo.png" alt="blockchain partner logo"></div>
+  <div class="slide"><img class="partners-img" src="img/mine/partners/dark/mpac.png" alt="mpac partner logo"></div>
+
+
+</div>
+</div>
+        
+
+
+
+</section>
+
+
+
+<section class="contents text-center pt-60 pt-lg-100 pb-45 pb-sm-60 pb-lg-100" id="contents-8">
+
+<div class="blueline"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-4 mb-15">
+        <div class="card p-60 p-lg-50 ph-20 aos-init aos-animate" data-aos="slide-up" data-aos-offset="-250" data-aos-duration="800" data-aos-delay="150">
+          <div class="">
+          <div class="mb-10"><img class="bigicon" src="img/mine/svg/handout-token.svg" alt=""/></div>
+          <h2 class="mb-20 features-3">Security Token: Diversification in the crypto market.</h2>
+          <p class="mb-10 features-detail">Bridge between crypto currency and real world asset.</p>
+        </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 mb-15">
+        <div class="card p-60 p-lg-50 ph-20 aos-init aos-animate" data-aos="slide-up" data-aos-offset="-250" data-aos-duration="800" data-aos-delay="150">
+          <div class="mb-10"><img class="bigicon" src="img/mine/svg/exchange-token.svg" alt=""/></div>
+          <h2 class="mb-20 features-3">A new way to invest in Real Estate</h2>
+          <p class="mb-10 features-detail">Easier access, optimised liquidity and periodic yield.</p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 mb-15" >
+        <div class="card p-60 p-lg-50 ph-20 aos-init aos-animate" data-aos="slide-up" data-aos-offset="-250" data-aos-duration="800" data-aos-delay="150">
+           <div class="mb-10"><img class="bigicon" src="img/mine/svg/pin-2.svg" alt=""/></div>
+          <h2 class="mb-20 features-3">Smart NAV Tracker</h2>
+          <p class="mb-10 features-detail">Creating a stable growth and narrow price corridor</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="contents bg-iphone-right text-center text-lg-left p-60 p-lg-100" id="contents-16">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-7 p-40 p-lg-10">
+        <h1 class="mb-20"> <span class="borderbottomtitle">How Does Leaseum Work?</span></h1>
+        <p>
+          Leaseum Partners will issue Leaseum (LSM) tokens and invest the proceeds through a traditional Fund focused on Core-Plus commercial real estate located in US tier 2 cities.</p> 
+          <br><p>
+Such digital proof of ownership of the Fund's interest can be traded at low cost 24/7, which allows investors to bypass standard 5+year lock-up 
+periods imposed within the commercial real estate industry.</p><br>
+<p>
+Real assets-backed Leaseum Tokens generate regular income with 
+defensive qualities.
+        </p>
+        <div class="row mt-30">
+          <div class="col-6">
+            <h3><i class="lp-token-icon oldbfeatures"></i> Investment Type</h3>
+            <p>Core-plus commercial real estate / Stabilized assets / Predictable revenue streams</p>
+          </div>
+          <div class="col-6">
+            <h3><i class="lp-token-icon oldbfeatures"></i> Geography</h3>
+            <p>USA - tier 2 cities such as Austin, Nashville, Portland, Raleigh...</p>
+          </div>
+        </div>
+         <div class="row mt-30">
+          <div class="col-6">
+            <h3><i class="lp-token-icon oldbfeatures"></i> Income Distributions</h3>
+            <p>Monthly</p>
+          </div>
+          <div class="col-6">
+            <h3><i class="lp-token-icon oldbfeatures"></i> Portfolio Diversification</h3>
+            <p>8 to 12 assets</p>
+          </div>
+        </div>
+        <div class="row mt-30">
+          <div class="col-6">
+            <h3><i class="lp-token-icon oldbfeatures"></i> Leaseum Token </h3><p>will be listed on crypto 
+securities exchanges, with secondary market trading open 24/7 (see White Paper, liquidity section).</p>
+            
+          </div>
+          <div class="col-6">
+            <h3><i class="lp-token-icon oldbfeatures"></i> Target IRR</h3>
+            <p>10 to 12% pa.</p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="forms text-center text-sm-left bg-dblue p-60 p-lg-50" id="forms-8">
+  <div class="container">
+    <div class="row justify-content-center align-items-center text-white">
+      <div class="col-12 col-sm-10 col-lg-4 mb-40 mb-lg-0">
+        <h2 class="mb-15">Private sale on-going</h2>
+        <p>Request more information to join the private sale!</p>
+      </div>
+      <div class="col-12 col-sm-10 col-lg-4">
+        <form id="signup" class="formee" action="subscribe.php" method="post" novalidate="novalidate">
+            <div>
+          <div>
+          
+            <input class="form-control3 mb-10" type="text" id="email" name="email" required="" placeholder="ENTER YOUR@EMAIL.COM" aria-required="true">
+          </div>          
+          <input type="submit" value="REQUEST MORE INFORMATION" class="btn-white transition-3d-hover w-full no-padding inputnew">
+          
+        </div>
+        </form>
+        <div id="response"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<section class="features bg-iphone-center pt-60 pt-lg-100 pb-20 pb-lg-70" id="features-7">
+  <div class="container">
+    <div class="wrap_box">
+    <h1 class="text-center mb-40 mb-lg-80"><span class="borderbottomtitle">Key Points</span></h1>
+        <div class="textc show_box">
+          <div class="mb-40">
+            <h3 class="mb-5">Monthly Revenue</h3>
+            <p>Rental income from the property 
+            will be distributed to token holders</p>
+            <div class="mb-10 iconkeypointsleft"><img class="normalicon" src="img/mine/svg/calendar-grid-61.svg" alt=""/></div>
+          </div>
+        </div>
+    <div class="row justify-content-between box_corect">
+      <div class="col-12 col-sm-6 col-lg-4 text-center text-sm-left text-lg-right">
+          <div class="mb-40 hidden_box">
+            <div class="mb-10 iconkeypointsleft"><img class="normalicon" src="img/mine/svg/calendar-grid-61.svg" alt=""/></div>
+            <h3 class="mb-5">Monthly Revenue</h3>
+            <p>Rental income from the property 
+            will be distributed to token holders</p>
+          </div>
+        <div class="mb-40"> 
+          <div class="mb-10 iconkeypointsleft"><img class="normalicon" src="img/mine/svg/building.svg" alt=""/></div>
+          <div class="textl">
+            <h3 class="mb-5">Asset Backed</h3>
+            <p>Every token is a digital share of our 
+            Real Estate Fund, backed by property assets.
+            </p>
+          </div>
+        </div>
+        <div class="mb-40 mb_top">
+          <div class="mb-10 iconkeypointsleft"><img class="normalicon" src="img/mine/svg/security.svg" alt=""/></div>
+          <div class="textl">
+            <h3 class="mb-5">Risk Diversification</h3>
+            <p>Highly reduced risk of loss of principal compared to other cryptocurrencies, for higher yield than traditional assets.</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4 show_box">
+        <div class="img_box">
+          <img src="img/mine/svg/logo-big.svg" alt="">
+          <span class="line_span line1"></span>
+          <span class="line_span line2"></span>
+          <span class="line_span line3"></span>
+          <span class="line_span line4"></span>
+          <span class="line_span line5"></span>
+          <span class="line_span line6"></span>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4 text-center text-sm-left">
+        <div class="mb-40 mbr">
+          <div class="mb-10 iconkeypointsright"><img class="normalicon" src="img/mine/svg/stablegrowth.svg" alt=""/></div>
+          <div class="textr">
+            <h3 class="mb-5">Stable Growth</h3>
+            <p>Leaseum partners introduced a 
+              sophisticated mechanism to reduce 
+              volatility and ensure a stable growth of the token value</p>
+          </div>
+        </div>
+        <div class="mb-40 mbr mb_top-r">
+          <div class="mb-10 iconkeypointsright"><img class="normalicon" src="img/mine/svg/chart-bar-33.svg" alt=""/></div>
+          <div class="textr">
+            <h3 class="mb-5">Performance Focused</h3>
+            <p>Gain access to high 10-12% yearly yields usually reserved to the biggest 
+            institutional investors.</p>
+          </div>
+        </div>
+        <div class="mb-40 hidden_box">
+          <div class="mb-10 iconkeypointsright"><img class="normalicon" src="img/mine/svg/stock.svg" alt=""/></div>
+          <h3 class="mb-5">Liquidity</h3>
+          <p>Easy access to Real Estate, Leaseum tokens can be traded on the 
+            secondary market 24/7.</p>
+        </div>
+      </div>
+
+    </div>
+      <div class="textc show_box last_textc">
+        <div class="mb-40 ">
+          <div class="mb-10 iconkeypointsright"><img class="normalicon" src="img/mine/svg/stock.svg" alt=""/></div>
+          <h3 class="mb-5">Liquidity</h3>
+          <p>Easy access to Real Estate, Leaseum <br> tokens can be traded on the 
+            secondary market 24/7.</p>
+        </div>
+      </div>
+      </div>
+  </div>
+
+</section>
+
+
+
+
+<section class="features bg-macbook-left pt-60 pt-lg-100" id="features-11">
+  <div class="container">
+    <h1 class="text-center mb-40 mb-lg-80"><span class="borderbottomtitle">Timeline</span></h1>
+    <div class="row justify-content-end">
+      <div class="col-12 col-sm-6 striked-vertical">
+        <div class="d-flex mb-60 mb-sm-50">
+          <div class="mr-15">
+            <img src="img/mine/svg/hexagon2.svg" class="hexagon-timeline"></img>
+          </div>
+          <div>
+            <h3>Q2 2018</h3>
+            <p>Opening of the private placement reserved to institutional investors.</p>
+          </div>
+        </div>
+
+        <div class="d-flex mb-60 mb-sm-50">
+          <div class="mr-15">
+            <img src="img/mine/svg/hexagon2.svg" class="hexagon-timeline"></img>
+          </div>
+          <div>
+            <h3>Q3 2018</h3>
+            <p>Interest registering in case of opening of the fund to public investors (ICO).</p>
+          </div>
+        </div>
+
+        <div class="d-flex mb-60 mb-sm-50">
+          <div class="mr-15">
+            <img src="img/mine/svg/hexagon2.svg" class="hexagon-timeline"></img>
+          </div>
+          <div>
+            <h3>Q4 2018</h3>
+            <p>Start of the fund investment period.</p>
+          </div>
+        </div>
+
+            <div class="d-flex mb-60 mb-sm-50">
+          <div class="mr-15">
+            <img src="img/mine/svg/hexagon2.svg" class="hexagon-timeline"></img>
+          </div>
+          <div>
+            <h3>Q1 2019</h3>
+            <p>First monthly dividend paid to token holders.</p>
+          </div>
+        </div>
+
+        <div class="d-flex mb-100 mb-sm-100">
+          <i class="timelineend lp-small-hexagon-2"></i>
+
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+</section>
+<section class="forms bg-dblue maincontactform text-center p-60 p-lg-100 text-white" id="forms-6">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-10 col-lg-8">
+        <h1 class="mb-40">Contact Us</h1>
+        <form class="mb-20">
+          <div class="row">
+            <div class="col-12 col-sm-6 mb-20">
+              <div>
+                <input class="form-control5" type="text" placeholder="Your name"/>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 mb-20">
+              <div>
+                <input class="form-control5" type="text" placeholder="Your Email"/>
+              </div>
+            </div>
+          </div>
+          <div>
+            <textarea class="form-control4 mb-20" placeholder="Your message" rows="4"></textarea>
+            
+          </div>
+          <button class="btn-white transition-3d-hover w-full no-padding"><span>SEND YOUR MESSAGE</span>
+          </button>
+        </form>
+        <p class="mb-20 text-muted">By clicking "Send" you agree to our <a class="link-muted-light" href="#">Terms of Service</a></p>
+                <div class=" text-center">
+          <div class="socials ">
+            <a class="smallicon transition-3d-hover" href=""><img src="img/mine/svg/logo-telegram-2.svg"/></a>
+            <a class="smallicon transition-3d-hover" href=""><img src="img/mine/svg/logo-facebook2.svg"/></a>
+            <a class="smallicon transition-3d-hover" href=""><img src="img/mine/svg/logo-twitter2.svg"/></a>
+ 
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="teams pt-60 pt-lg-100 pb-20 pb-lg-40 " id="teams-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="mb-40 mb-lg-60 text-center"><span class="borderbottomtitle">Team</span></h1>
+      </div>
+    </div>
+    <div class="row justify-content-between">
+
+
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-40 mb-lg-60">
+      <div class="d-flex mb-10">
+            <div class="mr-10 avatar"><img class="image mb-5 userpic-xs-team" src="img/team/sillam.jpg" alt=""/></div>
+          <div>
+            <div class="borderlefttext mb-10">
+              <p class="teamname">Steve</p>
+              <p class="teamlastname">Sillam</p>
+            </div>
+            <div>
+               <a href="#"><i class="lp-logo-facebook "></i></a>
+                <a href="#"><i class="lp-logo-linkedin "></i></a>
+            </div>
+          </div>
+      </div>
+      <div class=" mb-10">
+              <p class="teamposition">CEO, Co-founder</p>
+            </div>
+          <p class="mb-10 teamdescription">Private Equity, Real Estate & Consulting - Monaco Resources Group</p>
+          <p class="mb-10 teamdescription">Kurt Salmon (Accenture Strategy)</p>
+          <p class="mb-10 teamdescription">13+ years experience</p>
+
+</div>
+
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-40 mb-lg-60">
+      <div class="d-flex mb-10">
+            <div class="mr-10 avatar"><img class="image mb-5 userpic-xs-team" src="img/team/sillam.jpg" alt=""/></div>
+          <div>
+            <div class="borderlefttext mb-10">
+              <p class="teamname">Michael</p>
+              <p class="teamlastname">Abib</p>
+            </div>
+            <div>
+               <a href="#"><i class="lp-logo-facebook "></i></a>
+                <a href="#"><i class="lp-logo-linkedin "></i></a>
+            </div>
+          </div>
+      </div>
+      <div class=" mb-10">
+              <p class="teamposition">Head of Financial Engineering, Co-founder</p>
+            </div>
+          <p class="mb-10 teamdescription">Multi Asset Quant & Risk Analyst - Senior Vice President Citi, Credit Suisse, Societe Generale</p>
+          <p class="mb-10 teamdescription">8+ years of experience</p>
+
+</div>
+
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-40 mb-lg-60">
+      <div class="d-flex mb-10">
+            <div class="mr-10 avatar"><img class="image mb-5 userpic-xs-team" src="img/team/sillam.jpg" alt=""/></div>
+          <div>
+            <div class="borderlefttext mb-10">
+              <p class="teamname">Lior </p>
+              <p class="teamlastname">Abehassera</p>
+            </div>
+            <div>
+               <a href="#"><i class="lp-logo-facebook "></i></a>
+                <a href="#"><i class="lp-logo-linkedin "></i></a>
+            </div>
+          </div>
+      </div>
+      <div class=" mb-10">
+              <p class="teamposition">Head of Investor Relations, Co-founder</p>
+            </div>
+          <p class="mb-10 teamdescription">Equity Derivatives & Structured Products Institutional Sales Manager</p>
+          <p class="mb-10 teamdescription">Director Natixis CIB, BNP Paribas</p>
+          <p class="mb-10 teamdescription">12+ years of experience</p>
+
+</div>
+
+
+
+
+
+
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-40 mb-lg-60">
+      <div class="d-flex mb-10">
+            <div class="mr-10 avatar"><img class="image mb-5 userpic-xs-team" src="img/team/sillam.jpg" alt=""/></div>
+          <div>
+            <div class="borderlefttext mb-10">
+              <p class="teamname">Julien</p>
+              <p class="teamlastname">Callede</p>
+            </div>
+            <div>
+               <a href="#"><i class="lp-logo-facebook "></i></a>
+                <a href="#"><i class="lp-logo-linkedin "></i></a>
+            </div>
+          </div>
+      </div>
+      <div class=" mb-10">
+              <p class="teamposition">CMO, Partner</p>
+            </div>
+          <p class="mb-10 teamdescription">Internet entrepreneur</p>
+          <p class="mb-10 teamdescription">Co-founded the retail brand MADE.COM, second fastest-growing tech company in the UK in 2014 and multi-awarded European success</p>
+          <p class="mb-10 teamdescription">Advisor & Investor in the start ups & fast growing scale ups scene</p>
+
+</div>
+
+
+      <div class="col-12">
+      </div>
+   
+
+
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-40 mb-lg-60">
+      <div class="d-flex mb-10">
+            <div class="mr-10 avatar"><img class="image mb-5 userpic-xs-team" src="img/team/sillam.jpg" alt=""/></div>
+          <div>
+            <div class="borderlefttext mb-10">
+              <p class="teamname">David</p>
+              <p class="teamlastname">Dahan</p>
+            </div>
+            <div>
+               <a href="#"><i class="lp-logo-facebook "></i></a>
+                <a href="#"><i class="lp-logo-linkedin "></i></a>
+            </div>
+          </div>
+      </div>
+      <div class=" mb-10">
+              <p class="teamposition">CIO Real Estate</p>
+            </div>
+          <p class="mb-10 teamdescription">Former co-Head Aviva Investors Alternative Income Solutions (Managing Director  Real Estate, Infrastructure)</p>
+          <p class="mb-10 teamdescription">25+ years of experience</p>
+
+</div>
+
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-40 mb-lg-60">
+      <div class="d-flex mb-10">
+            <div class="mr-10 avatar"><img class="image mb-5 userpic-xs-team" src="img/team/sillam.jpg" alt=""/></div>
+          <div>
+            <div class="borderlefttext mb-10">
+              <p class="teamname">Michael</p>
+              <p class="teamlastname">Chetrit</p>
+            </div>
+            <div>
+               <a href="#"><i class="lp-logo-facebook "></i></a>
+                <a href="#"><i class="lp-logo-linkedin "></i></a>
+            </div>
+          </div>
+      </div>
+      <div class=" mb-10">
+              <p class="teamposition">Portfolio Manager</p>
+            </div>
+          <p class="mb-10 teamdescription">Principal at The Chetrit Organization, NYC-based single family office managing several billion USD of Principal real estate assets in Manhattan, and several USD 1billion+ deals done in the US.
+</p>
+
+</div>
+
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-40 mb-lg-60">
+      <div class="d-flex mb-10">
+            <div class="mr-10 avatar"><img class="image mb-5 userpic-xs-team" src="img/team/sillam.jpg" alt=""/></div>
+          <div>
+            <div class="borderlefttext mb-10">
+              <p class="teamname">Robin</p>
+              <p class="teamlastname">Paynter</p>
+              <p class="teamlastname">Bryant</p>
+            </div>
+            <div>
+               <a href="#"><i class="lp-logo-facebook "></i></a>
+                <a href="#"><i class="lp-logo-linkedin "></i></a>
+            </div>
+          </div>
+      </div>
+      <div class=" mb-10">
+              <p class="teamposition">Capital Markets</p>
+            </div>
+          <p class="mb-10 teamdescription">Partner Trinity Column, Managing Director Industrial Bank of Japan (Mizuho Group), LCF E. De Rothschild, Nikko Securities, FCA CF1 & 13</p>
+          <p class="mb-10 teamdescription">30+ years experience.</p>
+
+</div>
+
+
+
+
+
+
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-40 mb-lg-60">
+      <div class="d-flex mb-10">
+            <div class="mr-10 avatar"><img class="image mb-5 userpic-xs-team" src="img/team/sillam.jpg" alt=""/></div>
+          <div>
+            <div class="borderlefttext mb-10">
+              <p class="teamname">Rui</p>
+              <p class="teamlastname">Soares</p>
+            </div>
+            <div>
+               <a href="#"><i class="lp-logo-facebook "></i></a>
+                <a href="#"><i class="lp-logo-linkedin "></i></a>
+            </div>
+          </div>
+      </div>
+      <div class=" mb-10">
+              <p class="teamposition">CFO</p>
+            </div>
+          <p class="mb-10 teamdescription">Investment professional with 18 years of experience in M&A, ECM, Quantitative Proprietary Trading, Hedge Fund Management.</p>
+          <p class="mb-10 teamdescription">BNP Paribas, Commerzbank</p>
+
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<section class="teams pt-50 pt-lg-50 pb-20 pb-lg-40 " id="teams-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="mb-40 mb-lg-60 text-center"><span class="borderbottomtitle">Advisors</span></h1>
+      </div>
+    </div>
+    <div class="row justify-content-between">
+
+
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-40 mb-lg-60">
+      <div class="d-flex mb-10">
+            <div class="mr-10 avatar"><img class="image mb-5 userpic-xs-team" src="img/team/sillam.jpg" alt=""/></div>
+          <div>
+            <div class="borderlefttext mb-10">
+              <p class="teamname">Steve</p>
+              <p class="teamlastname">Sillam</p>
+            </div>
+            <div>
+               <a href="#"><i class="lp-logo-facebook "></i></a>
+                <a href="#"><i class="lp-logo-linkedin "></i></a>
+            </div>
+          </div>
+      </div>
+      <div class=" mb-10">
+              <p class="teamposition">CEO, Co-founder</p>
+            </div>
+          <p class="mb-10 teamdescription">Private Equity, Real Estate & Consulting - Monaco Resources Group</p>
+          <p class="mb-10 teamdescription">Kurt Salmon (Accenture Strategy)</p>
+          <p class="mb-10 teamdescription">13+ years experience</p>
+
+</div>
+
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-40 mb-lg-60">
+      <div class="d-flex mb-10">
+            <div class="mr-10 avatar"><img class="image mb-5 userpic-xs-team" src="img/team/sillam.jpg" alt=""/></div>
+          <div>
+            <div class="borderlefttext mb-10">
+              <p class="teamname">Michael</p>
+              <p class="teamlastname">Abib</p>
+            </div>
+            <div>
+               <a href="#"><i class="lp-logo-facebook "></i></a>
+                <a href="#"><i class="lp-logo-linkedin "></i></a>
+            </div>
+          </div>
+      </div>
+      <div class=" mb-10">
+              <p class="teamposition">Head of Financial Engineering, Co-founder</p>
+            </div>
+          <p class="mb-10 teamdescription">Multi Asset Quant & Risk Analyst - Senior Vice President Citi, Credit Suisse, Societe Generale</p>
+          <p class="mb-10 teamdescription">8+ years of experience</p>
+
+</div>
+
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-40 mb-lg-60">
+      <div class="d-flex mb-10">
+            <div class="mr-10 avatar"><img class="image mb-5 userpic-xs-team" src="img/team/sillam.jpg" alt=""/></div>
+          <div>
+            <div class="borderlefttext mb-10">
+              <p class="teamname">Lior </p>
+              <p class="teamlastname">Abehassera</p>
+            </div>
+            <div>
+               <a href="#"><i class="lp-logo-facebook "></i></a>
+                <a href="#"><i class="lp-logo-linkedin "></i></a>
+            </div>
+          </div>
+      </div>
+      <div class=" mb-10">
+              <p class="teamposition">Head of Investor Relations, Co-founder</p>
+            </div>
+          <p class="mb-10 teamdescription">Equity Derivatives & Structured Products Institutional Sales Manager</p>
+          <p class="mb-10 teamdescription">Director Natixis CIB, BNP Paribas</p>
+          <p class="mb-10 teamdescription">12+ years of experience</p>
+
+</div>
+
+
+
+
+
+
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-40 mb-lg-60">
+      <div class="d-flex mb-10">
+            <div class="mr-10 avatar"><img class="image mb-5 userpic-xs-team" src="img/team/sillam.jpg" alt=""/></div>
+          <div>
+            <div class="borderlefttext mb-10">
+              <p class="teamname">Julien</p>
+              <p class="teamlastname">Callede</p>
+            </div>
+            <div>
+               <a href="#"><i class="lp-logo-facebook "></i></a>
+                <a href="#"><i class="lp-logo-linkedin "></i></a>
+            </div>
+          </div>
+      </div>
+      <div class=" mb-10">
+              <p class="teamposition">CMO, Partner</p>
+            </div>
+          <p class="mb-10 teamdescription">Internet entrepreneur</p>
+          <p class="mb-10 teamdescription">Co-founded the retail brand MADE.COM, second fastest-growing tech company in the UK in 2014 and multi-awarded European success</p>
+          <p class="mb-10 teamdescription">Advisor & Investor in the start ups & fast growing scale ups scene</p>
+
+</div>
+
+
+      <div class="col-12">
+      </div>
+   
+
+
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-40 mb-lg-60">
+      <div class="d-flex mb-10">
+            <div class="mr-10 avatar"><img class="image mb-5 userpic-xs-team" src="img/team/sillam.jpg" alt=""/></div>
+          <div>
+            <div class="borderlefttext mb-10">
+              <p class="teamname">David</p>
+              <p class="teamlastname">Dahan</p>
+            </div>
+            <div>
+               <a href="#"><i class="lp-logo-facebook "></i></a>
+                <a href="#"><i class="lp-logo-linkedin "></i></a>
+            </div>
+          </div>
+      </div>
+      <div class=" mb-10">
+              <p class="teamposition">CIO Real Estate</p>
+            </div>
+          <p class="mb-10 teamdescription">Former co-Head Aviva Investors Alternative Income Solutions (Managing Director  Real Estate, Infrastructure)</p>
+          <p class="mb-10 teamdescription">25+ years of experience</p>
+
+</div>
+
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-40 mb-lg-60">
+      <div class="d-flex mb-10">
+            <div class="mr-10 avatar"><img class="image mb-5 userpic-xs-team" src="img/team/sillam.jpg" alt=""/></div>
+          <div>
+            <div class="borderlefttext mb-10">
+              <p class="teamname">Michael</p>
+              <p class="teamlastname">Chetrit</p>
+            </div>
+            <div>
+               <a href="#"><i class="lp-logo-facebook "></i></a>
+                <a href="#"><i class="lp-logo-linkedin "></i></a>
+            </div>
+          </div>
+      </div>
+      <div class=" mb-10">
+              <p class="teamposition">Portfolio Manager</p>
+            </div>
+          <p class="mb-10 teamdescription">Principal at The Chetrit Organization, NYC-based single family office managing several billion USD of Principal real estate assets in Manhattan, and several USD 1billion+ deals done in the US.
+</p>
+
+</div>
+
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-40 mb-lg-60">
+      <div class="d-flex mb-10">
+            <div class="mr-10 avatar"><img class="image mb-5 userpic-xs-team" src="img/team/sillam.jpg" alt=""/></div>
+          <div>
+            <div class="borderlefttext mb-10">
+              <p class="teamname">Robin</p>
+              <p class="teamlastname">Paynter</p>
+              <p class="teamlastname">Bryant</p>
+            </div>
+            <div>
+               <a href="#"><i class="lp-logo-facebook "></i></a>
+                <a href="#"><i class="lp-logo-linkedin "></i></a>
+            </div>
+          </div>
+      </div>
+      <div class=" mb-10">
+              <p class="teamposition">Capital Markets</p>
+            </div>
+          <p class="mb-10 teamdescription">Partner Trinity Column, Managing Director Industrial Bank of Japan (Mizuho Group), LCF E. De Rothschild, Nikko Securities, FCA CF1 & 13</p>
+          <p class="mb-10 teamdescription">30+ years experience.</p>
+
+</div>
+
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-40 mb-lg-60">
+      <div class="d-flex mb-10">
+            <div class="mr-10 avatar"><img class="image mb-5 userpic-xs-team" src="img/team/sillam.jpg" alt=""/></div>
+          <div>
+            <div class="borderlefttext mb-10">
+              <p class="teamname">Rui</p>
+              <p class="teamlastname">Soares</p>
+            </div>
+            <div>
+               <a href="#"><i class="lp-logo-facebook "></i></a>
+                <a href="#"><i class="lp-logo-linkedin "></i></a>
+            </div>
+          </div>
+      </div>
+      <div class=" mb-10">
+              <p class="teamposition">CFO</p>
+            </div>
+          <p class="mb-10 teamdescription">Investment professional with 18 years of experience in M&A, ECM, Quantitative Proprietary Trading, Hedge Fund Management.</p>
+          <p class="mb-10 teamdescription">BNP Paribas, Commerzbank</p>
+
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<section class="testimonials ourpartners text-center p-60 p-lg-100 pb-40 pb-lg-80" id="testimonials-3">
+  <div class="container">
+    <h1 class="mb-40 mb-lg-60"><span class="borderbottomtitle">Our partners</span></h1>
+
+    <div class="row justify-content-center align-items-center">
+            <div class="col-6 col-sm-4 col-lg-4 mb-20 "><img class="allpartners" src="img/mine/partners/light/blockchain-logo.png"/>
+      </div>
+      <div class="col-6 col-sm-4 col-lg-4 mb-20"><img class="allpartners" src="img/mine/partners/light/bancor.png"/>
+      </div>
+      <div class="col-6 col-sm-4 col-lg-4 mb-20 "><img class="allpartners" src="img/mine/partners/light/mpac.png"/>
+      </div>
+
+      <!--
+      <div class="col-6 col-sm-3 col-lg-2 mb-20"><img src="#"/>
+      </div>
+      <div class="col-6 col-sm-3 col-lg-2 mb-20"><img src="#"/>
+      </div>
+      <div class="col-6 col-sm-3 col-lg-2 mb-20"><img src="#"/>
+      </div>
+    -->
+    </div>
+  </div>
+</section>
+
+<section class="forms text-center text-sm-left bg-dblue p-60 p-lg-50" id="forms-8">
+  <div class="container">
+    <div class="row justify-content-center align-items-center text-white">
+      <div class="col-12 col-sm-10 col-lg-4 mb-40 mb-lg-0">
+        <h2 class="mb-15">Private sale on-going</h2>
+        <p>Request more information to join the private sale!</p>
+      </div>
+      <div class="col-12 col-sm-10 col-lg-4">
+        <form id="signup" class="formee" action="subscribe.php" method="post" novalidate="novalidate">
+            <div>
+          <div>
+          
+            <input class="form-control3 mb-10" type="text" id="email" name="email" required="" placeholder="ENTER YOUR@EMAIL.COM" aria-required="true">
+          </div>          
+          <input type="submit" value="REQUEST MORE INFORMATION" class="btn-white transition-3d-hover w-full no-padding inputnew">
+          
+        </div>
+        </form>
+        <div id="response"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class=" faq features text-center pt-60 pt-lg-100 pb-20 pb-lg-60" id="features-12">
+  <div class="container">
+    <h1 class="mb-40"><span class="borderbottomtitle">FAQ</span></h1>
+    <ul class="nav-tabs mb-30" id="feature-12-tabs">
+      <li class="active"><a href="#feature-12-tab-0" data-toggle="tab">TAB ONE</a></li>
+      <li><a href="#feature-12-tab-1" data-toggle="tab">TAB TWO</a></li>
+      <li><a href="#feature-12-tab-2" data-toggle="tab">TAB THREE</a></li>
+    </ul>
+    <div class="tabs-content text-left">
+      <div class="tab-panel active" id="feature-12-tab-0">
+        <div class="row justify-content-between">
+          <div class="col-12 col-sm-6 col-lg-5">
+            <div class="mb-40">
+              <h3>Feature One</h3>
+              <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
+            </div>
+            <div class="mb-40">
+              <h3>Feature Two</h3>
+              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth</p>
+            </div>
+            <div class="mb-40">
+              <h3>Feature Three</h3>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-5">
+            <div class="mb-40">
+              <h3>Feature Four</h3>
+              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth</p>
+            </div>
+            <div class="mb-40">
+              <h3>Feature Five</h3>
+              <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
+            </div>
+            <div class="mb-40">
+              <h3>Feature Six</h3>
+              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-panel" id="feature-12-tab-1">
+        <div class="row justify-content-between">
+          <div class="col-12 col-sm-6 col-lg-5">
+            <div class="mb-40">
+              <h3>Feature One</h3>
+              <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
+            </div>
+            <div class="mb-40">
+              <h3>Feature Two</h3>
+              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-5">
+            <div class="mb-40">
+              <h3>Feature Three</h3>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
+            </div>
+            <div class="mb-40">
+              <h3>Feature Four</h3>
+              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-panel" id="feature-12-tab-2">
+        <div class="row justify-content-between">
+          <div class="col-12 col-sm-6 col-lg-5">
+            <div class="mb-40">
+              <h3>Feature One</h3>
+              <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
+            </div>
+            <div class="mb-40">
+              <h3>Feature Two</h3>
+              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth</p>
+            </div>
+            <div class="mb-40">
+              <h3>Feature Three</h3>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-5">
+            <div class="mb-40">
+              <h3>Feature Four</h3>
+              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth</p>
+            </div>
+            <div class="mb-40">
+              <h3>Feature Five</h3>
+              <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
+            </div>
+            <div class="mb-40">
+              <h3>Feature Six</h3>
+              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $('#feature-12-tabs a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+      })
+
+
+    </script>
+  </div>
+</section> 
+
+
+
+<section class="blogs pt-60 pt-lg-100 pb-45 pb-sm-60 pb-lg-70" id="blogs-16">
+  <div class="container">
+    <h1 class="text-center mb-60">News</h1>
+    <div class="row">
+      <div class="col-12 col-lg-8">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-12 text-center mb-15 mb-sm-30">
+            <div class="ratio-1-1">
+              <div class="panel d-flex">
+                <div class="align-self-center ph-30"><img class="mb-40 hidden-992-min" src="img/pics/pic-100.svg" alt="" width="100"/>
+                  <h2 class="mb-15">Platforma wireframe kit</h2>
+                  <p class="mb-30">Far far away, behind the word mountains, far from the countries Vokalia.</p><a class="arrow b-500" href="">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 mb-15 mb-sm-30">
+            <div class="ratio-1-1">
+              <div class="panel d-flex">
+                <div class="align-self-center ph-30">
+                  <h3>Platforma wireframe kit</h3>
+                  <p class="mb-30">Far far away, behind the word mountains, far from the countries Vokalia.</p><a class="arrow b-500" href="">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 mb-15 mb-sm-30">
+            <div class="ratio-1-1">
+              <div class="panel d-flex">
+                <div class="align-self-center ph-30">
+                  <h3>Platforma wireframe kit</h3>
+                  <p class="mb-30">Far far away, behind the word mountains, far from the countries Vokalia.</p><a class="arrow b-500" href="">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 mb-15 mb-sm-30 hidden-992">
+            <div class="ratio-1-1">
+              <div class="panel d-flex">
+                <div class="align-self-center ph-30">
+                  <h3>Platforma wireframe kit</h3>
+                  <p class="mb-30">Far far away, behind the word mountains, far from the countries Vokalia.</p><a class="arrow b-500" href="">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="row">
+          <div class="col-12 mb-15 col-md-6 col-lg-12 mb-sm-30">
+            <div class="ratio-1-1">
+              <div class="panel d-flex">
+                <div class="align-self-center ph-30">
+                  <h3>Platforma wireframe kit</h3>
+                  <p class="mb-30">Far far away, behind the word mountains, far from the countries Vokalia.</p><a class="arrow b-500" href="">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mb-15 col-md-6 col-lg-12 mb-sm-30">
+            <div class="ratio-1-1">
+              <div class="panel d-flex">
+                <div class="align-self-center ph-30">
+                  <h3>Platforma wireframe kit</h3>
+                  <p class="mb-30">Far far away, behind the word mountains, far from the countries Vokalia.</p><a class="arrow b-500" href="">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mb-15 col-md-6 col-lg-12 mb-sm-30 hidden-992-min">
+            <div class="ratio-1-1">
+              <div class="panel d-flex">
+                <div class="align-self-center ph-30">
+                  <h3>Platforma wireframe kit</h3>
+                  <p class="mb-30">Far far away, behind the word mountains, far from the countries Vokalia.</p><a class="arrow b-500" href="">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> 
+
+
+<!--   SECTION START.  -->
+
+<div id="fastlinks" class="contents positionabsolute text-center pt-60 pt-lg-100" ">
+
+
+
+  <div class="container  aos-init aos-animate" data-aos="fade-up">
+    <div class="row">
+
+      <div class="col-12 col-lg-4  aos-init aos-animate" data-aos="slide-up" data-aos-offset="-250" data-aos-duration="800" data-aos-delay="150">
+        <div class="card2 p-30 p-lg-30 ph-30">
+          <h2 class="mb-5 features-4"><span class="lp-square-pin mediumicon-blue headofficeicon"></span>Head Office</h2>
+          <div class="features-detail">
+           <p> Lansdowne House,</p>
+          <p>57 Berkeley Square,</p>
+          <p>London, W1J 6ER</p>
+        </div>
+        </div>
+      </div>
+
+
+      <div class="col-12 col-lg-4 aos-init aos-animate" data-aos="slide-up" data-aos-offset="-250" data-aos-duration="800" data-aos-delay="150">
+        <a href="" class="card3 transition-3d-hover d-flex justify-content-around p-25 p-lg-25 mb-15 ph-25">
+          <span class="lp-at-sign mediumicon-blue"></span>
+          <h2 class=" features-4">Email us</h2>
+          <span class="lp-stre-right smallicon-dark"></span>
+
+      </a>
+         <a href="" class="card3 transition-3d-hover d-flex justify-content-around p-25 p-lg-25 mb-15 ph-25">
+          <span class="lp-logo-twitter mediumicon-blue"></span>
+          <h2 class=" features-4">Join our Twitter</h2>
+          <span class="lp-stre-right smallicon-dark"></span>
+        </a>
+      </div>
+
+
+      <div class="col-12 col-lg-4  aos-init aos-animate" data-aos="slide-up" data-aos-offset="-250" data-aos-duration="800" data-aos-delay="150">
+        <a href=""  class="card3 transition-3d-hover d-flex justify-content-around p-25 p-lg-25 mb-15 ph-25">
+          <span class="lp-send mediumicon-blue"></span>
+          <h2 class=" features-4">Join our Telegram</h2>
+          <span class="lp-stre-right smallicon-dark"></span>
+        </a>
+
+        <a href=""  class="card3 transition-3d-hover d-flex justify-content-around p-25 p-lg-25 mb-15 ph-25">
+          <span class="lp-logo-facebook mediumicon-blue"></span>
+          <h2 class=" features-4">Join our Facebook</h2>
+          <span class="lp-stre-right smallicon-dark"></span>
+        </a>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+<!--   SECTION END.  -->
+
+
+
+
+<section class="forms text-center bg-devices p-60 p-lg-100" id="forms-10">
+
+
+
+
+
+<div class="bluelinemap"></div>
+
+
+  <div class="container">
+ <i class="lp-pin-3 mapicon"></i>
+    <div class="row justify-content-center justify-content-lg-end">
+
+      <div class="col-12 col-lg-4 text-lg-center">
+
+      <div class="private-sale-form opacityform">
+        <div class="bg-dblue p-40 ph-15 ph-sm-30">
+          <i class="lp-token-icon formlogowhite"></i>
+          <h2 class="mb-20 private-sale text-white">Private sale on-going</h2>
+
+          <form id="signup" class="formee" action="subscribe.php" method="post">
+            <div>
+
+          
+            <input class="form-control3 mb-10" type="text" id="email" name="email" required placeholder="ENTER YOUR@EMAIL.COM"></input>
+                   
+          <input type="submit" value="REQUEST MORE INFORMATION" class="btn-white transition-3d-hover  w-full no-padding inputnew">
+          </input>
+
+        </div>
+        </form>
+        <div id="response"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<section class="footers text-center" id="footers-6">
+
+
+
+  <div class="container">
+    <div class="p-20 bb">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-12 col-lg-3 text-center text-lg-left mb-20 mb-lg-0">
+          <div class="navbar-header"><a href=""><img class="bottom-logo" src="img/mine/logo/leaseum-logo-white.svg" alt="leaseum partners logo"/></a></div>
+        </div>
+        <div class="col-12 col-lg-6 mb-20 mb-lg-0">
+          <nav class="navbar"><a class="text-white" href="">PRE-REGISTER</a><a class="text-white" href="">STRATEGY</a><a  class="text-white"href="">TOKEN</a><a class="text-white" href="">ABOUT US</a><a class="text-white" href="">FAQ</a><a class="text-white" href="">NEWS</a></nav>
+        </div>
+        <div class="col-12 col-lg-3 text-center text-lg-right">
+          <div class="socials">
+            <a class="smallicon transition-3d-hover" href=""><img src="img/mine/svg/logo-telegram-2.svg"/></a>
+            <a class="smallicon transition-3d-hover" href=""><img src="img/mine/svg/logo-facebook2.svg"/></a>
+            <a class="smallicon transition-3d-hover" href=""><img src="img/mine/svg/logo-twitter2.svg"/></a>
+ 
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="p-20 text-white">&copy; 2018 Leaseum Partners All rights reserved</p>
+  </div>
+</section>
+
+
+
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+
+
+  </body>
+</html>
